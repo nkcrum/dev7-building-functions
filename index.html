@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Elderflower</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <h1>Elderflower</h1>
+    <div id="content">
+      <div id="greeting" class="message">Welcome to Elderflower Design Company</div>
+      <div id="seeCode"><a href="https://github.com/nkcrum/dev7-building-functions" id="codeLink" target="_blank">See the code</a></div>
+      <table>
+        <tr>
+          <td>Custom sign: </td>
+          <td id="userSign">
+            <input id="userSignInput" type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>Font Upgrade</td>
+          <td><input id="userFontInput" type="checkbox">($1/tile)
+          </td>
+        </tr>
+        <tr>
+          <td>Color Upgrade</td>
+          <td><input id="userColorInput" type="checkbox">($2/tile)
+          </td>
+        </tr>
+        <tr>
+          <td>Total tiles: </td>
+          <td id="tiles"></td>
+        </tr>
+        <tr>
+          <td>Subtotal: </td>
+          <td id="subTotal">$</td>
+        </tr>
+        <tr>
+          <td>Shipping: </td>
+          <td id="shipping">$</td>
+        </tr>
+        <tr>
+          <td>Grand total: </td>
+          <td id="grandTotal">$</td>
+        </tr>
+      </table>
+      <a href="#" id="confirmOrder" class="action">Submit Order</a>
+    </div>
+    <div id="previewScreen">
+      <div id="previewHeader">Order Confirmation</div>
+      <<div id="defaultMsg"></div>
+      <a href="#" id="cancelButton">
+        <div id="cancelPreview">CANCEL</div>
+      </a>
+      <a href="#" id="confirmButton">
+        <div id="confirmPreview">CONFIRM</div>
+      </a>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
